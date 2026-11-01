@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CodeLab Cotonou — Apprendre. Coder. Partager.</title>
+  <meta name="description"
+    content="CodeLab Cotonou, club étudiant de programmation au Bénin : apprendre, coder et partager ensemble." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Caveat:wght@600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#accueil" class="logo" aria-label="CodeLab Cotonou - Accueil">
+        <img class="logo__img" src="images/logo-horizontal.png" alt="CodeLab Cotonou" width="1115" height="250" />
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Navigation principale">
+        <ul class="nav__list">
+          <li><a href="#accueil" class="nav__link active">Accueil</a></li>
+          <li><a href="#club" class="nav__link">Le club</a></li>
+          <li><a href="#activites" class="nav__link">Activités</a></li>
+          <li><a href="#avantages" class="nav__link">Avantages</a></li>
+          <li><a href="#rejoindre" class="nav__link">Rejoindre</a></li>
+        </ul>
+        <a href="#rejoindre" class="btn btn--yellow nav__cta-mobile">Rejoindre le club</a>
+      </nav>
+
+      <a href="#rejoindre" class="btn btn--yellow btn--sm header__cta">
+        <svg class="ico" viewBox="0 0 24 24">
+          <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+          <circle cx="9" cy="7" r="4" />
+          <path d="M19 8v6M22 11h-6" />
+        </svg>
+        Rejoindre le club
+      </a>
+
+      <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="accueil">
+      <div class="hero__blob hero__blob--left"></div>
+      <div class="hero__blob hero__blob--right"></div>
+      <div class="container hero__inner">
+        <div class="hero__content reveal">
+          <span class="badge">Club étudiant de programmation</span>
+          <h1 class="hero__title">
+            CodeLab Cotonou
+            <span class="hero__slogan">Apprendre. <em>Coder.</em> Partager.</span>
+          </h1>
+          <p class="hero__text">
+            Un espace d'échange et d'apprentissage où les étudiants se réunissent pour découvrir
+            la programmation, développer leurs compétences et réaliser des projets ensemble.
+          </p>
+          <div class="hero__actions">
+            <a href="#rejoindre" class="btn btn--yellow btn--lg">
+              Rejoindre le club
+              <svg class="ico" viewBox="0 0 24 24">
+                <path d="M5 12h14M13 6l6 6-6 6" />
+              </svg>
+            </a>
+            <div class="community">
+              <div class="avatars">
+                <span class="avatar" style="--c:#7C4DFF">A</span>
+                <span class="avatar" style="--c:#FF8A3D">K</span>
+                <span class="avatar" style="--c:#21B573">M</span>
+                <span class="avatar avatar--count">+<span data-count="40">0</span></span>
+              </div>
+              <p>Rejoins une communauté<br>de passionnés !</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__visual reveal reveal--right">
+          <div class="hero__img-wrap">
+            <img src="images/hero.png"
+              alt="Trois étudiants de CodeLab Cotonou codant ensemble sur un ordinateur portable" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== À PROPOS ===== -->
+    <section class="about section" id="club">
+      <div class="container about__inner">
+        <div class="about__content reveal">
+          <span class="badge">À propos de nous</span>
+          <h2 class="section__title">Qu'est-ce que<br>CodeLab Cotonou ?</h2>
+          <p class="section__text">
+            CodeLab Cotonou est un club étudiant de programmation qui réunit des jeunes passionnés
+            du numérique. Nous apprenons ensemble, nous partageons nos connaissances et nous réalisons
+            des projets concrets pour préparer notre avenir dans le monde digital.
+          </p>
+          <p class="section__text more-text" id="moreText" hidden>
+            Ateliers hebdomadaires, sessions de code en binôme, hackathons, présentations de projets :
+            chaque membre, débutant ou confirmé, trouve sa place et progresse à son rythme, accompagné
+            par les autres.
+          </p>
+          <button class="btn btn--outline" id="moreBtn" aria-expanded="false" aria-controls="moreText">
+            <span>En savoir plus</span>
+            <svg class="ico" viewBox="0 0 24 24">
+              <path d="M5 12h14M13 6l6 6-6 6" />
+            </svg>
+          </button>
+        </div>
+
+        <div class="about__visual reveal reveal--right">
+          <div class="illu">
+            <div class="illu__bg"></div>
+            <div class="laptop">
+              <div class="laptop__screen">
+                <div class="laptop__dots"><i></i><i></i><i></i></div>
+                <div class="code-lines">
+                  <span style="--w:55%;--c:#FFC93C"></span>
+                  <span style="--w:75%;--c:#B69CFF;--i:1"></span>
+                  <span style="--w:40%;--c:#FF8A3D;--i:2"></span>
+                  <span style="--w:65%;--c:#FFC93C;--i:3"></span>
+                  <span style="--w:50%;--c:#5EC8FF;--i:4"></span>
+                  <span style="--w:70%;--c:#B69CFF;--i:5"></span>
+                  <span style="--w:35%;--c:#FF8A3D;--i:6"></span>
+                </div>
+              </div>
+              <div class="laptop__base"></div>
+            </div>
+            <span class="chip chip--purple chip--1">&lt;/&gt;</span>
+            <span class="chip chip--yellow chip--2">Python</span>
+            <span class="chip chip--purple chip--3">HTML</span>
+            <span class="chip chip--yellow chip--4">CSS</span>
+            <span class="chip chip--yellow chip--5">&lt;/&gt;</span>
+            <span class="chip chip--purple chip--6">.../&gt;</span>
+            <svg class="leaf" viewBox="0 0 80 90" aria-hidden="true">
+              <path
+                d="M40 88C38 60 20 50 6 44c18 0 28 10 34 22C38 40 30 22 34 2c8 20 10 40 8 62 4-16 14-30 32-36-12 14-20 32-22 60z"
+                fill="#4B1FA8" />
+              <path d="M44 88c2-14 10-24 24-26-8 8-14 16-16 26z" fill="#FFC93C" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ACTIVITÉS ===== -->
+    <section class="activities section" id="activites">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="badge">Nos activités</span>
+          <h2 class="section__title">Ce qu'on fait ensemble</h2>
+          <p class="section__text">Chaque semaine, des moments pour apprendre, pratiquer et se challenger.</p>
+        </div>
+        <div class="activities__grid">
+          <article class="activity reveal">
+            <span class="activity__tag">Chaque mercredi</span>
+            <h3>Ateliers de code</h3>
+            <p>HTML, CSS, JavaScript, Python… des sessions guidées pour apprendre pas à pas.</p>
+          </article>
+          <article class="activity reveal">
+            <span class="activity__tag">Une fois par trimestre</span>
+            <h3>Hackathons</h3>
+            <p>48 h pour imaginer et construire une solution à un vrai problème local.</p>
+          </article>
+          <article class="activity reveal">
+            <span class="activity__tag">Chaque mois</span>
+            <h3>Talks & partages</h3>
+            <p>Des membres et des pros présentent leurs projets, leurs outils et leurs parcours.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== AVANTAGES ===== -->
+    <section class="benefits section" id="avantages">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="badge">Nos avantages</span>
+          <h2 class="section__title">Pourquoi nous rejoindre ?</h2>
+          <p class="section__text">Rejoins CodeLab Cotonou et profite de nombreux avantages !</p>
+        </div>
+
+        <div class="benefits__grid">
+          <article class="card reveal">
+            <span class="card__icon">
+              <svg class="ico" viewBox="0 0 24 24">
+                <path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16" />
+              </svg>
+            </span>
+            <h3 class="card__title">Apprendre<br>la programmation</h3>
+            <p class="card__text">Découvre les bases et améliore tes compétences avec des projets pratiques.</p>
+          </article>
+          <article class="card reveal">
+            <span class="card__icon">
+              <svg class="ico" viewBox="0 0 24 24">
+                <circle cx="12" cy="7" r="3" />
+                <circle cx="5" cy="9" r="2.3" />
+                <circle cx="19" cy="9" r="2.3" />
+                <path d="M7 20v-2a5 5 0 0 1 10 0v2M1.5 19v-1a3.5 3.5 0 0 1 4.5-3.3M22.5 19v-1a3.5 3.5 0 0 0-4.5-3.3" />
+              </svg>
+            </span>
+            <h3 class="card__title">Travailler en équipe</h3>
+            <p class="card__text">Échange, collabore et apprends aux côtés d'autres étudiants passionnés.</p>
+          </article>
+          <article class="card reveal">
+            <span class="card__icon">
+              <svg class="ico" viewBox="0 0 24 24">
+                <path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z" />
+              </svg>
+            </span>
+            <h3 class="card__title">Réaliser des projets</h3>
+            <p class="card__text">Passe de la théorie à la pratique en développant des projets concrets.</p>
+          </article>
+          <article class="card reveal">
+            <span class="card__icon">
+              <svg class="ico" viewBox="0 0 24 24">
+                <path
+                  d="M5 15c-1.5 1.3-2 5-2 5s3.7-.5 5-2c.7-.8.7-2 0-2.8a2.1 2.1 0 0 0-3 0zM12 15l-3-3a22 22 0 0 1 2-4A12.9 12.9 0 0 1 22 2c0 2.7-.8 7.5-6 11a22.4 22.4 0 0 1-4 2z" />
+                <path d="M9 12H4s.6-3 2-4c1.6-1.1 5 0 5 0M12 15v5s3-.6 4-2c1.1-1.6 0-5 0-5" />
+              </svg>
+            </span>
+            <h3 class="card__title">Booster ton avenir</h3>
+            <p class="card__text">Développe ton profil, gagne en expérience et ouvre-toi de nouvelles opportunités.</p>
+          </article>
+        </div>
+
+        <!-- CTA -->
+        <div class="cta reveal">
+          <div class="cta__deco" aria-hidden="true"><i></i><i></i><i></i></div>
+          <span class="cta__icon">
+            <svg class="ico" viewBox="0 0 24 24">
+              <circle cx="12" cy="7" r="3" />
+              <circle cx="5" cy="9" r="2.3" />
+              <circle cx="19" cy="9" r="2.3" />
+              <path d="M7 20v-2a5 5 0 0 1 10 0v2M1.5 19v-1a3.5 3.5 0 0 1 4.5-3.3M22.5 19v-1a3.5 3.5 0 0 0-4.5-3.3" />
+            </svg>
+          </span>
+          <div class="cta__text">
+            <p>Tu es étudiant(e) et tu veux apprendre,<br>créer et faire partie d'une communauté dynamique ?</p>
+            <strong>Rejoins <em>CodeLab Cotonou</em> dès maintenant !</strong>
+          </div>
+          <a href="#rejoindre" class="btn btn--yellow">
+            <svg class="ico" viewBox="0 0 24 24">
+              <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <path d="M19 8v6M22 11h-6" />
+            </svg>
+            Comment rejoindre ?
+            <svg class="ico" viewBox="0 0 24 24">
+              <path d="M5 12h14M13 6l6 6-6 6" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== REJOINDRE ===== -->
+    <section class="join section" id="rejoindre">
+      <div class="container join__inner">
+        <div class="join__info reveal">
+          <span class="badge">Rejoindre</span>
+          <h2 class="section__title">Comment rejoindre le club ?</h2>
+          <ol class="steps">
+            <li><b>1</b>
+              <div>
+                <h4>Remplis le formulaire</h4>
+                <p>Quelques infos pour te connaître.</p>
+              </div>
+            </li>
+            <li><b>2</b>
+              <div>
+                <h4>On te recontacte</h4>
+                <p>Un membre du bureau t'écrit sous 48 h.</p>
+              </div>
+            </li>
+            <li><b>3</b>
+              <div>
+                <h4>Viens à ton premier atelier</h4>
+                <p>Ramène ta curiosité, on s'occupe du reste !</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+
+        <form class="form reveal reveal--right" id="joinForm" novalidate>
+          <h3>Inscription</h3>
+          <div class="form__row">
+            <label class="field">
+              <span>Nom complet</span>
+              <input type="text" name="name" placeholder="Ex : Aïcha Johnson" required />
+              <small class="error"></small>
+            </label>
+            <label class="field">
+              <span>E-mail</span>
+              <input type="email" name="email" placeholder="ton.email@exemple.com" required />
+              <small class="error"></small>
+            </label>
+          </div>
+          <div class="form__row">
+            <label class="field">
+              <span>École / Université</span>
+              <input type="text" name="school" placeholder="Ex : UAC, EPAC, IFRI…" required />
+              <small class="error"></small>
+            </label>
+            <label class="field">
+              <span>Niveau en programmation</span>
+              <select name="level" required>
+                <option value="">Choisir…</option>
+                <option>Débutant(e)</option>
+                <option>Intermédiaire</option>
+                <option>Avancé(e)</option>
+              </select>
+              <small class="error"></small>
+            </label>
+          </div>
+          <label class="field">
+            <span>Pourquoi veux-tu nous rejoindre ? <em>(facultatif)</em></span>
+            <textarea name="message" rows="3" placeholder="Parle-nous de toi…"></textarea>
+          </label>
+          <button type="submit" class="btn btn--purple btn--block">
+            Envoyer ma demande
+            <svg class="ico" viewBox="0 0 24 24">
+              <path d="M5 12h14M13 6l6 6-6 6" />
+            </svg>
+          </button>
+          <p class="form__success" id="formSuccess" role="status" hidden>🎉 Merci ! Ta demande a bien été envoyée. On te
+            recontacte très vite.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer__blob"></div>
+    <div class="container">
+      <div class="footer__top">
+        <a href="#accueil" class="logo logo--light" aria-label="CodeLab Cotonou">
+          <img class="logo__img" src="images/logo-horizontal-light.png" alt="CodeLab Cotonou" width="1115"
+            height="250" />
+        </a>
+        <p class="footer__slogan">Apprendre. Coder. Partager.</p>
+        <div class="socials">
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24">
+              <rect x="3" y="3" width="18" height="18" rx="5" />
+              <circle cx="12" cy="12" r="4" />
+              <circle cx="17.5" cy="6.5" r="1" fill="currentColor" />
+            </svg></a>
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24">
+              <path d="M6 9v10M6 5.5v.01M10 19v-6a3 3 0 0 1 6 0v6M10 13v-4" />
+            </svg></a>
+          <a href="#" aria-label="GitHub"><svg viewBox="0 0 24 24">
+              <path
+                d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21" />
+            </svg></a>
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24">
+              <path d="M15 3h-2a4 4 0 0 0-4 4v3H7v4h2v7h4v-7h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+            </svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24">
+              <rect x="2" y="5" width="20" height="14" rx="4" />
+              <path d="M10 9l5 3-5 3z" fill="currentColor" />
+            </svg></a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© <span id="year">2026</span> CodeLab Cotonou. Tous droits réservés.</p>
+        <p>Bénin <span class="sep">|</span> Club étudiant de programmation</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Retour en haut">
+    <svg class="ico" viewBox="0 0 24 24">
+      <path d="M12 19V5M6 11l6-6 6 6" />
+    </svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
